@@ -12,7 +12,7 @@ def fadingCCalculator():
     fadingConstant = {}
     overall = overallExpectancy()
     users = UserSummary.distinct("_id", {"acts": {"$exists": True}})
-    # Find users with at least one action
+    # Find users with at least one action.
 
     for action in overall.keys():
         shownAfter = 0
