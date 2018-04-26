@@ -12,6 +12,7 @@ UserSummary = myClient.AdNetwork.UserSummary
 # This constant helps to distinguish new ads (in a somehow fuzzy logic)
 TRAN_C = 10000
 
+
 class AdInfo:
     def __init__(self, adId: str, adAction: str, adCost: float):
         self.adId = adId
