@@ -12,7 +12,7 @@ def mineRules():
     adsDict = {}
     allActedUsers = UserSummary.find({"acts": {"$exists": True}})  # All users with at least one action
     for ad in AdsSummary.find().sort("_id", 1):
-        # One-Hot-Encoding user actions
+        # One-Hot-Encoding user actions.
         adsDict[ad["_id"]] = [1 if ad["_id"] in user["acts"] else 0 for user in allActedUsers]
         allActedUsers.rewind()  # This is needed for reusing Mongo cursor
     # Now we get ready for the magic

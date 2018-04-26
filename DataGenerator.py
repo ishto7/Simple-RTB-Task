@@ -7,7 +7,7 @@ RawData = myClient.AdNetwork.RawData
 AdsSummary = myClient.AdNetwork.AdsSummary
 UserSummary = myClient.AdNetwork.UserSummary
 
-# Constants
+# Constants:
 N_IMP = 10 ** 5  # Number of impressions
 N_ADS = 50  # Number of ads
 N_USERS = 1000  # Number of users
